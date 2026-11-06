@@ -1,7 +1,18 @@
 import axios from 'axios';
 
+const configuredApiUrl = import.meta.env.VITE_API_URL?.trim().replace(/\/+$/, '');
+const apiBaseUrl = configuredApiUrl
+  ? `${configuredApiUrl.replace(/(?:\/api)+$/i, '')}/api`
+  : import.meta.env.DEV
+    ? '/api'
+    : '';
+
+if (!apiBaseUrl) {
+  throw new Error('VITE_API_URL must be set for production builds.');
+}
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL: apiBaseUrl,
 });
 
 // Request interceptor to attach JWT token
