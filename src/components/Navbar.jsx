@@ -49,7 +49,11 @@ const Navbar = () => {
         
         {/* Brand */}
         <Link to="/" className="text-xl font-bold text-indigo-600 hover:text-indigo-700">
-          Boink
+            <h1 className="text-3xl font-black tracking-tight
+  bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500
+  bg-clip-text text-transparent">
+  B♡INK
+</h1>
         </Link>
 
         <div className="relative mx-2 min-w-0 flex-1 max-w-sm">

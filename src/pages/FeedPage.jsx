@@ -40,11 +40,11 @@ const FeedPage = () => {
   return (
     <div className="min-h-screen bg-slate-50">
       <Navbar />
-     <div className="flex justify-center items-center">
-  <h2 className="text-lg font-bold tracking-wide
-    bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500
+     <div className="flex justify-center items-center py-3">
+  <h2 className="text-lg font-extrabold tracking-wide
+    bg-gradient-to-r from-red-500 via-orange-500 via-yellow-400 via-green-500 via-cyan-500 via-blue-500 via-indigo-500 via-purple-500 via-pink-500 to-rose-500
     bg-clip-text text-transparent">
-    🔥 What's Trending...
+    What's Trending...
   </h2>
 </div>
 
