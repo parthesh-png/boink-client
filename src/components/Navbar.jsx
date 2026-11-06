@@ -52,7 +52,7 @@ const Navbar = () => {
             <h1 className="text-3xl font-black tracking-tight
   bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500
   bg-clip-text text-transparent">
-  B♡INK..
+  B♡INK
 </h1>
         </Link>
 
